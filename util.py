@@ -14,10 +14,11 @@ def only_filename(fn: str):
 def setup():
     global localPath
     localPath = '/'.join(str(__file__).split('\\')[:-1])
+    print(localPath)
     try:
-        open(DebugFile, 'a')
+        open(localPath + '/' + DebugFile, 'a')
     except FileNotFoundError:
-        open(DebugFile, 'w')
+        open(localPath + '/' + DebugFile, 'w')
 
 
 def debug(typ, data, fl_name=None):

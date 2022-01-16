@@ -10,19 +10,18 @@ function send(text){
     xhr.send();
 }
 
-
+var first = true;
 function init(){
-    var Styles = document.getElementById("Styles");
-    const screenWidth = window.innerWidth;
-    const screenHeight = window.innerHeight;
-    if (screenWidth <= 900 && Styles.href === "styles.css"){
-        Styles.href = "Mobilestyles.css";
-        alert("Width: " + screenWidth + '\nHeight: ' + screenHeight);
+    var style = document.getElementById("Styles");
+    var screenWidth = window.innerWidth;
+    const pcstyle = "styles.css";
+    const phonestyle = "Mobilestyles.css";
+
+    if (screenWidth <= 900){
+        if (style.href == phonestyle)
+            return
     }
-    else if (screenWidth > 900 && Styles.href === "Mobilestyles.css"){
-        Styles.href = "styles.css";
-        alert("Width: " + screenWidth + '\nHeight: ' + screenHeight);
-    }
+
 }
 
 document.addEventListener('keydown', function(event) {
