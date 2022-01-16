@@ -1,0 +1,30 @@
+body{
+    background: url(hitackEyeVertical.jpg) no-repeat;
+    background-size: 100%;
+}
+
+h1{
+    color: white;
+}
+input{
+    background-color: black;
+    color: white;
+    border: 0;
+}
+.sendText{
+    background-color: #21d9d0;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    height: 25px;
+    width: 50px;
+}
+.sendFile{
+    background-color: #21d9d0;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    height: 25px;
+    width: 75px;
+    margin: 10px 0;
+}

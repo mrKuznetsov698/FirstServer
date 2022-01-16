@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Flask</title>
+        <link rel="icon" href="/favicon.ico">
+        <!--Files-->
+        <link id="Styles" href="styles.css" rel="stylesheet">
+        <script src="/index.js"></script>
+    </head>
+    <body onload="setInterval(init, 100);">
+        <center>
+            <h1>It's works</h1>
+            <input id="text" placeholder="write text here">
+            <button class="sendText" onclick="Send();">
+                <strong>Send</strong>
+            </button>
+            <br>
+            <button class="sendFile" id="select_file" onclick="file_select();">
+                Upload file
+            </button>
+        </center>
+    </body>
+</html>
