@@ -14,12 +14,20 @@ var first = true;
 function init(){
     var style = document.getElementById("Styles");
     var screenWidth = window.innerWidth;
-    const pcstyle = "styles.css";
-    const phonestyle = "Mobilestyles.css";
+    const pc_style = "styles.css";
+    const phone_style = "Mobilestyles.css";
 
     if (screenWidth <= 900){
-        if (style.href == phonestyle)
-            return
+        if (style.href == phone_style)
+            return;
+        style.href = phone_style;
+        return;
+    }
+    if (screenWidth > 900){
+        if (style.href == pc_style)
+            return;
+        style.href = pc_style;
+        return;
     }
 
 }
