@@ -10,7 +10,6 @@ function send(text){
     xhr.send();
 }
 
-var first = true;
 function init(){
     var style = document.getElementById("Styles");
     var screenWidth = window.innerWidth;
